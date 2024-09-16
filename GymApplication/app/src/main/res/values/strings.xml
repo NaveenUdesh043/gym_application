@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tute03</string>
+    <string name="app_name">Gym Application</string>
     <string name="loginTxt">Are you have an account? <font color="#FD511E">SignUp</font></string>
     <string name="forgot_password">Forgot Password</string>
     <string name="get_started">Get Started</string>

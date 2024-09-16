@@ -72,10 +72,12 @@ drawable search
 drawable weightloss
 drawable workout
 id OtherWorkouts
+id add_task_button
 id backBtn
 id button
 id cartBtn
 id coordinatorLayout
+id delete_task_button
 id descriptionTxt
 id durationTxt
 id editTextName
@@ -111,6 +113,7 @@ id onboarding3
 id pic2
 id profileBtn
 id profilePage
+id reminder_time_picker
 id scrollView2
 id scrollView3
 id scrollView5
@@ -118,6 +121,11 @@ id shapeableImageView
 id shapeableImageView1
 id shapeableImageView2
 id signinTxt
+id task_datetime
+id task_description
+id task_input
+id task_list
+id task_reminder_time
 id textView
 id textView10
 id textView11
@@ -164,6 +172,8 @@ layout activity_onboarding1
 layout activity_onboarding2
 layout activity_onboarding3
 layout activity_profile_page
+layout activity_task_list_time
+layout activity_todo
 layout activity_workout
 layout activity_workouts_page
 layout viewholder_exercise
@@ -239,10 +249,11 @@ string weightGoals
 string welcome_back
 string welcome_to_nfitlifebudddy
 string you_just_woke_up_it_is_a_brand_new_day_the_canvas_is_blank_how_do_you_begin_take_21_minutes_to_cultivate_a_peaceful_mind_and_strong_body
+style Base.Theme.GymApplication
 style Base.Theme.Tute03
 style ShapeAppearanceOverlay.App.circleImageView
 style Style.App.circleImageView
-style Theme.Tute03
+style Theme.GymApplication
 style roundedImageRounded
 xml backup_rules
 xml data_extraction_rules

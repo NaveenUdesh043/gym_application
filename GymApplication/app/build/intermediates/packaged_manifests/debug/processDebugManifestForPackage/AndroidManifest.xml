@@ -8,6 +8,8 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <permission
         android:name="com.example.gymapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -26,7 +28,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Tute03" >
+        android:theme="@style/Theme.GymApplication" >
         <activity
             android:name="com.example.gymapplication.WorkoutsPage"
             android:exported="false" />
@@ -52,8 +54,13 @@
             android:name="com.example.gymapplication.Onboarding3"
             android:exported="false" />
         <activity
-            android:name="com.example.gymapplication.Domain.Onboardin2"
+            android:name="com.example.gymapplication.ToDoPage"
             android:exported="false" />
+
+        <receiver
+            android:name="com.example.gymapplication.ReminderBroadcastReceiver"
+            android:exported="false" />
+
         <activity
             android:name="com.example.gymapplication.Onboarding1"
             android:exported="false" />

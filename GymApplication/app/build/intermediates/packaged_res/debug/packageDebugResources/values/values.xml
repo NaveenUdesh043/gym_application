@@ -16,7 +16,7 @@
     <string name="_2500">2500</string>
     <string name="_3w_5days">3w 5days</string>
     <string name="_7h_15min">7h 15min</string>
-    <string name="app_name">Tute03</string>
+    <string name="app_name">Gym Application</string>
     <string name="back">Back</string>
     <string name="bodyMeasurementsDetails">Height: 5\'11 (180 cm)\nWeight: 170 lbs (77 kg)Chest: 40 inches\nWaist: 32 inches\nHips: 38 inches\n</string>
     <string name="body_measurements">Body Measurements:</string>
@@ -79,7 +79,7 @@
     <string name="welcome_back">Welcome back</string>
     <string name="welcome_to_nfitlifebudddy">Welcome to \nFit Life Budddy</string>
     <string name="you_just_woke_up_it_is_a_brand_new_day_the_canvas_is_blank_how_do_you_begin_take_21_minutes_to_cultivate_a_peaceful_mind_and_strong_body">You just woke up. It is a brand new day. The canvas is blank. How do you begin? Take 21 minutes to cultivate a peaceful mind and strong body.</string>
-    <style name="Base.Theme.Tute03" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.GymApplication" parent="Theme.Material3.DayNight.NoActionBar">
         
         
     </style>
@@ -90,7 +90,7 @@
     <style name="Style.App.circleImageView" parent="">
         <item name="shapeAppearance">@style/ShapeAppearanceOverlay.App.circleImageView</item>
     </style>
-    <style name="Theme.Tute03" parent="Base.Theme.Tute03"/>
+    <style name="Theme.GymApplication" parent="Base.Theme.GymApplication"/>
     <style name="roundedImageRounded">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>

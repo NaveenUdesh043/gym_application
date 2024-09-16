@@ -16,16 +16,16 @@
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable_logo.jpg.flat",
-        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable\\logo.jpg"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-ldpi_banner.png.flat",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable-ldpi\\banner.png"
     },
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable_onb1.png.flat",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable\\onb1.png"
     },
     {
-        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-ldpi_banner.png.flat",
-        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable-ldpi\\banner.png"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable_logo.jpg.flat",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable\\logo.jpg"
     },
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable_pic_2.jpg.flat",
@@ -70,6 +70,10 @@
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-mdpi_banner.png.flat",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable-mdpi\\banner.png"
+    },
+    {
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\layout_activity_task_list_time.xml.flat",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_task_list_time.xml"
     },
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\layout_activity_profile_page.xml.flat",
@@ -154,6 +158,10 @@
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable_onboard3.png.flat",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable\\onboard3.png"
+    },
+    {
+        "merged": "com.example.gymapplication.app-debug-32:/layout_activity_todo.xml.flat",
+        "source": "com.example.gymapplication.app-main-34:/layout/activity_todo.xml"
     },
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-xhdpi_fav_icon.png.flat",
@@ -296,10 +304,6 @@
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.gymapplication.app-debug-32:/layout_activity_onboarding2.xml.flat",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_onboarding2.xml"
-    },
-    {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-xxxhdpi_btn_3.png.flat",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable-xxxhdpi\\btn_3.png"
     },
@@ -432,6 +436,10 @@
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable-ldpi\\monitor2.png"
     },
     {
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\layout_todo.xml.flat",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\todo.xml"
+    },
+    {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-xxxhdpi_monitor2.png.flat",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable-xxxhdpi\\monitor2.png"
     },
@@ -470,6 +478,10 @@
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable_achi.png.flat",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\drawable\\achi.png"
+    },
+    {
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\layout_activity_todo.xml.flat",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_todo.xml"
     },
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-debug-32:\\drawable-xhdpi_btn_3.png.flat",
