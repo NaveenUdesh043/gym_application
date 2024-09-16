@@ -2187,6 +2187,7 @@ int dimen abc_text_size_subtitle_material_toolbar 0x7f06004e
 int dimen abc_text_size_title_material 0x7f06004f
 int dimen abc_text_size_title_material_toolbar 0x7f060050
 int dimen appcompat_dialog_background_inset 0x7f060051
+int dimen btn_margin 0x7f060327
 int dimen cardview_compat_inset_shadow 0x7f060052
 int dimen cardview_default_elevation 0x7f060053
 int dimen cardview_default_radius 0x7f060054
@@ -2262,6 +2263,7 @@ int dimen hint_pressed_alpha_material_light 0x7f060099
 int dimen item_touch_helper_max_drag_scroll_per_frame 0x7f06009a
 int dimen item_touch_helper_swipe_escape_max_velocity 0x7f06009b
 int dimen item_touch_helper_swipe_escape_velocity 0x7f06009c
+int dimen large_margin 0x7f060323
 int dimen m3_alert_dialog_action_bottom_padding 0x7f06009d
 int dimen m3_alert_dialog_action_top_padding 0x7f06009e
 int dimen m3_alert_dialog_corner_size 0x7f06009f
@@ -2650,6 +2652,7 @@ int dimen m3_sys_state_pressed_state_layer_opacity 0x7f06021d
 int dimen m3_timepicker_display_stroke_width 0x7f06021e
 int dimen m3_timepicker_window_elevation 0x7f06021f
 int dimen m3_toolbar_text_size_title 0x7f060220
+int dimen margin_standard 0x7f060324
 int dimen material_bottom_sheet_max_width 0x7f060221
 int dimen material_clock_display_height 0x7f060222
 int dimen material_clock_display_padding 0x7f060223
@@ -2900,6 +2903,8 @@ int dimen notification_small_icon_size_as_large 0x7f060317
 int dimen notification_subtext_size 0x7f060318
 int dimen notification_top_pad 0x7f060319
 int dimen notification_top_pad_large_text 0x7f06031a
+int dimen text_large 0x7f060325
+int dimen text_medium 0x7f060326
 int dimen tooltip_corner_radius 0x7f06031b
 int dimen tooltip_horizontal_padding 0x7f06031c
 int dimen tooltip_margin 0x7f06031d
@@ -4150,6 +4155,7 @@ int string onboardingScreen2Description 0x7f0f00c3
 int string onboardingScreen2Title 0x7f0f00c4
 int string onboardingScreen3Description 0x7f0f00c5
 int string onboardingScreen3Title 0x7f0f00c6
+int string onbordingHeading 0x7f0f00ea
 int string otherGoals 0x7f0f00c7
 int string other_workouts 0x7f0f00c8
 int string password 0x7f0f00c9

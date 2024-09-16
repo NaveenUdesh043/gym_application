@@ -1,54 +1,58 @@
 [
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_onboarding3.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_onboarding3.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_intro.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_intro.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_workouts_page.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_workouts_page.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_login_page.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_login_page.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_forgot_password.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_forgot_password.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_onboarding1.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_onboarding1.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_profile_page.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_profile_page.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\viewholder_exercise.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\viewholder_exercise.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_create_acoount.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_create_acoount.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_onboarding2.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_onboarding2.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/viewholder_exercise.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/viewholder_exercise.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_forgot_password.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_login_page.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_login_page.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_create_acoount.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_create_acoount.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_main.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_onboarding3.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_onboarding3.xml"
+    },
+    {
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_workout.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_workout.xml"
+    },
+    {
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_workouts_page.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_workouts_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\viewholder_workout.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\viewholder_workout.xml"
     },
     {
         "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_onboarding2.xml",
         "source": "com.example.gymapplication.app-main-34:/layout/activity_onboarding2.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_intro.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_intro.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_profile_page.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_profile_page.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/viewholder_workout.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/viewholder_workout.xml"
-    },
-    {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_onboarding1.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_onboarding1.xml"
-    },
-    {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_workout.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_workout.xml"
+        "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_main.xml"
     }
 ]

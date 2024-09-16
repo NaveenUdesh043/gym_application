@@ -5,6 +5,11 @@ color darkBlue
 color mainColor
 color orange
 color white
+dimen btn_margin
+dimen large_margin
+dimen margin_standard
+dimen text_large
+dimen text_medium
 drawable achi
 drawable back
 drawable background
@@ -210,6 +215,7 @@ string onboardingScreen2Description
 string onboardingScreen2Title
 string onboardingScreen3Description
 string onboardingScreen3Title
+string onbordingHeading
 string otherGoals
 string other_workouts
 string password

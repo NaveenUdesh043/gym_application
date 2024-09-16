@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Tute03</string>
-    <string name="loginTxt">Are you have an account? <font color="#FD511E">Signin</font></string>
+    <string name="loginTxt">Are you have an account? <font color="#FD511E">SignUp</font></string>
     <string name="forgot_password">Forgot Password</string>
     <string name="get_started">Get Started</string>
     <string name="push_yourself_nto_the_limit">PUSH YOURSELF\nTO THE LIMIT</string>
     <string name="liluksha_rs">Liluksha RS</string>
-    <string name="welcome_to_nfitlifebudddy">Welcome to\nFitLifeBudddy</string>
+    <string name="welcome_to_nfitlifebudddy">Welcome to \nFit Life Budddy</string>
     <string name="let_s_go">Let\'s Go</string>
     <string name="onboardingScreen1Title">Workouts Tailored\n Just for You</string>
     <string name="onboardingScreen1Description">Whether your goal is to maintain a healthy lifestyle, gain muscle, or reduce weight, get personalised fitness plans that meet your objectives.</string>
@@ -20,12 +20,12 @@
     <string name="passwordLogin">Password</string>
     <string name="forgot_your_password">Forgot your password?</string>
     <string name="loginBtn">Login</string>
-    <string name="create_account">Create\nAccount</string>
+    <string name="create_account">Create New Account</string>
     <string name="full_name">Full Name</string>
     <string name="phone_number">Phone Number</string>
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
-    <string name="loginBtnCreateAcc">Login</string>
+    <string name="loginBtnCreateAcc">Signup</string>
     <string name="new_password">New Password</string>
     <string name="re_enter_password">Re-enter Password</string>
     <string name="confirm">Confirm</string>
@@ -67,4 +67,5 @@
     <string name="weightGoals">Current Weight: 170 lbs\nTarget Weight: 160 lbs\n</string>
     <string name="goals">Goals:</string>
     <string name="otherGoals">Strength Goal: Bench press 200 lbs\nEndurance Goal: Run a half marathon\nNutrition Goal: 2,500 calories per day,\n150g protein, 300g carbs, 70g fats</string>
+    <string name="onbordingHeading">Workouts Tailored and Just for You</string>
 </resources>
