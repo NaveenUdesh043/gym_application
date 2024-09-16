@@ -60,7 +60,7 @@ class ToDoPage : AppCompatActivity() {
         val taskDescription = taskInput.text.toString()
         val taskDateTime = Calendar.getInstance().timeInMillis
 
-        // Get reminder time from TimePicker
+
         val reminderCalendar = Calendar.getInstance()
         reminderCalendar.set(Calendar.HOUR_OF_DAY, reminderTimePicker.hour)
         reminderCalendar.set(Calendar.MINUTE, reminderTimePicker.minute)
@@ -69,14 +69,13 @@ class ToDoPage : AppCompatActivity() {
 
         if (taskDescription.isNotEmpty()) {
             if (selectedTaskIndex != null) {
-                // Update existing task
+
                 val task = taskList[selectedTaskIndex!!]
                 task.description = taskDescription
                 task.dateTime = taskDateTime
                 task.reminderTime = reminderTime
                 selectedTaskIndex = null
             } else {
-                // Add new task
                 val task = Task(taskDescription, taskDateTime, reminderTime)
                 taskList.add(task)
             }
@@ -108,7 +107,7 @@ class ToDoPage : AppCompatActivity() {
 
     private fun loadTasks() {
         val count = sharedPreferences.getInt("task_count", 0)
-        taskList.clear() // Clear current list to avoid duplication
+        taskList.clear()
         for (i in 0 until count) {
             val taskString = sharedPreferences.getString("task_$i", null) ?: continue
             val (description, dateTime, reminderTime) = taskString.split("|")
@@ -126,7 +125,7 @@ class ToDoPage : AppCompatActivity() {
         handler.postDelayed(object : Runnable {
             override fun run() {
                 checkTasksDue()
-                handler.postDelayed(this, 60000) // Check every minute
+                handler.postDelayed(this, 60000)
             }
         }, 0)
     }
@@ -142,10 +141,6 @@ class ToDoPage : AppCompatActivity() {
                 break
             } else if (task.reminderTime <= currentTime) {
                 sendNotification(task, "Task Reminder", "Reminder: ${task.description}")
-                // Optionally, remove the reminder but keep the task in the list
-                // taskList.remove(task)
-                // saveTasks()
-                // updateTaskAdapter()
                 break
             }
         }
@@ -154,10 +149,8 @@ class ToDoPage : AppCompatActivity() {
     private fun sendNotification(task: Task, title: String, message: String) {
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         val channelId = "task_channel"
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(channelId, "Task Notifications", NotificationManager.IMPORTANCE_DEFAULT)
-            notificationManager.createNotificationChannel(channel)
-        }
+        val channel = NotificationChannel(channelId, "Task Notifications", NotificationManager.IMPORTANCE_DEFAULT)
+        notificationManager.createNotificationChannel(channel)
 
         val notification = NotificationCompat.Builder(this, channelId)
             .setContentTitle(title)
@@ -169,7 +162,6 @@ class ToDoPage : AppCompatActivity() {
         notificationManager.notify(1, notification)
     }
 
-    // Custom ArrayAdapter for tasks
     inner class TaskAdapter(context: Context, private val tasks: List<Task>) : ArrayAdapter<Task>(context, R.layout.activity_task_list_time, tasks) {
         override fun getView(position: Int, convertView: android.view.View?, parent: android.view.ViewGroup): android.view.View {
             val view = convertView ?: layoutInflater.inflate(R.layout.activity_task_list_time, parent, false)
