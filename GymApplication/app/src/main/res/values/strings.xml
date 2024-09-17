@@ -69,4 +69,5 @@
     <string name="otherGoals">Strength Goal: Bench press 200 lbs\nEndurance Goal: Run a half marathon\nNutrition Goal: 2,500 calories per day,\n150g protein, 300g carbs, 70g fats</string>
     <string name="onbordingHeading">Workouts Tailored and Just for You</string>
     <string name="set_reminder">Set Reminder</string>
+    <string name="todoList">Todo List</string>
 </resources>

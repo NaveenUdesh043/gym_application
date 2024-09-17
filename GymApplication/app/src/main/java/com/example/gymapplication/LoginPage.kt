@@ -33,19 +33,22 @@ class LoginPage : AppCompatActivity() {
             val enteredPassword = passwordEditText.text.toString()
 
 
-            val sharedPref = getSharedPreferences("UserDetails", Context.MODE_PRIVATE)
-            val savedUsername = sharedPref.getString("username", null)
-            val savedPassword = sharedPref.getString("password", null)
-
-            if (enteredUsername == savedUsername && enteredPassword == savedPassword) {
-
-                val intent = Intent(this, Onboarding1::class.java)
-                startActivity(intent)
-                Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+            if (enteredUsername.isEmpty() || enteredPassword.isEmpty()) {
+                Toast.makeText(this, "Please fill in both fields!", Toast.LENGTH_SHORT).show()
             } else {
+                val sharedPref = getSharedPreferences("UserDetails", Context.MODE_PRIVATE)
+                val savedUsername = sharedPref.getString("username", null)
+                val savedPassword = sharedPref.getString("password", null)
 
-                Toast.makeText(this, "Invalid username or password!", Toast.LENGTH_SHORT).show()
+                if (enteredUsername == savedUsername && enteredPassword == savedPassword) {
+                    val intent = Intent(this, Onboarding1::class.java)
+                    startActivity(intent)
+                    Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(this, "Invalid username or password!", Toast.LENGTH_SHORT).show()
+                }
             }
         }
+
     }
 }

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gymapplication.activity.MainActivity
 
 class Onboarding3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class Onboarding3 : AppCompatActivity() {
         setContentView(R.layout.activity_onboarding3)
         val startBtn: Button = findViewById(R.id.nextBtn)
         startBtn.setOnClickListener{
-            val intent = Intent(this, CreateAcoount::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

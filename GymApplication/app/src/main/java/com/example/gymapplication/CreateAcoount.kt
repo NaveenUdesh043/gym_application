@@ -36,10 +36,10 @@ class CreateAcoount : AppCompatActivity() {
             editor.putString("phone", phone)
             editor.putString("username", username)
             editor.putString("password", password)
-            editor.apply() // Apply changes
+            editor.apply()
 
 
-            val intent = Intent(this, Onboarding1::class.java)
+            val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
         }
     }

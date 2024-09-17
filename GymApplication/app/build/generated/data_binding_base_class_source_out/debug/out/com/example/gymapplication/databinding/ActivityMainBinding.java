@@ -34,9 +34,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final EditText editTextText;
 
   @NonNull
-  public final ImageView favBtn;
-
-  @NonNull
   public final ImageView imageView;
 
   @NonNull
@@ -94,6 +91,9 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textView9;
 
   @NonNull
+  public final ImageView todoBtn;
+
+  @NonNull
   public final View view;
 
   @NonNull
@@ -104,19 +104,18 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView cartBtn,
       @NonNull CoordinatorLayout coordinatorLayout, @NonNull EditText editTextText,
-      @NonNull ImageView favBtn, @NonNull ImageView imageView, @NonNull ImageView imageView12,
-      @NonNull ImageView imageView2, @NonNull ImageView imageView4, @NonNull TextView profileBtn,
-      @NonNull ImageView profilePage, @NonNull ScrollView scrollView2, @NonNull TextView textView10,
-      @NonNull TextView textView11, @NonNull TextView textView12, @NonNull TextView textView2,
-      @NonNull TextView textView23, @NonNull TextView textView3, @NonNull TextView textView4,
-      @NonNull TextView textView7, @NonNull TextView textView71, @NonNull TextView textView72,
-      @NonNull TextView textView8, @NonNull TextView textView9, @NonNull View view,
+      @NonNull ImageView imageView, @NonNull ImageView imageView12, @NonNull ImageView imageView2,
+      @NonNull ImageView imageView4, @NonNull TextView profileBtn, @NonNull ImageView profilePage,
+      @NonNull ScrollView scrollView2, @NonNull TextView textView10, @NonNull TextView textView11,
+      @NonNull TextView textView12, @NonNull TextView textView2, @NonNull TextView textView23,
+      @NonNull TextView textView3, @NonNull TextView textView4, @NonNull TextView textView7,
+      @NonNull TextView textView71, @NonNull TextView textView72, @NonNull TextView textView8,
+      @NonNull TextView textView9, @NonNull ImageView todoBtn, @NonNull View view,
       @NonNull RecyclerView view1, @NonNull ConstraintLayout workoutPage) {
     this.rootView = rootView;
     this.cartBtn = cartBtn;
     this.coordinatorLayout = coordinatorLayout;
     this.editTextText = editTextText;
-    this.favBtn = favBtn;
     this.imageView = imageView;
     this.imageView12 = imageView12;
     this.imageView2 = imageView2;
@@ -136,6 +135,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.textView72 = textView72;
     this.textView8 = textView8;
     this.textView9 = textView9;
+    this.todoBtn = todoBtn;
     this.view = view;
     this.view1 = view1;
     this.workoutPage = workoutPage;
@@ -183,12 +183,6 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.editTextText;
       EditText editTextText = ViewBindings.findChildViewById(rootView, id);
       if (editTextText == null) {
-        break missingId;
-      }
-
-      id = R.id.favBtn;
-      ImageView favBtn = ViewBindings.findChildViewById(rootView, id);
-      if (favBtn == null) {
         break missingId;
       }
 
@@ -306,6 +300,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.todoBtn;
+      ImageView todoBtn = ViewBindings.findChildViewById(rootView, id);
+      if (todoBtn == null) {
+        break missingId;
+      }
+
       id = R.id.view;
       View view = ViewBindings.findChildViewById(rootView, id);
       if (view == null) {
@@ -321,10 +321,10 @@ public final class ActivityMainBinding implements ViewBinding {
       ConstraintLayout workoutPage = (ConstraintLayout) rootView;
 
       return new ActivityMainBinding((ConstraintLayout) rootView, cartBtn, coordinatorLayout,
-          editTextText, favBtn, imageView, imageView12, imageView2, imageView4, profileBtn,
-          profilePage, scrollView2, textView10, textView11, textView12, textView2, textView23,
-          textView3, textView4, textView7, textView71, textView72, textView8, textView9, view,
-          view1, workoutPage);
+          editTextText, imageView, imageView12, imageView2, imageView4, profileBtn, profilePage,
+          scrollView2, textView10, textView11, textView12, textView2, textView23, textView3,
+          textView4, textView7, textView71, textView72, textView8, textView9, todoBtn, view, view1,
+          workoutPage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

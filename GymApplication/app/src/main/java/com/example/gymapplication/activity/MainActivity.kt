@@ -12,7 +12,7 @@ import com.example.gymapplication.domain.Lesson
 import com.example.gymapplication.domain.Workout
 import com.example.gymapplication.ProfilePage
 import com.example.gymapplication.R
-import com.example.gymapplication.WorkoutsPage
+import com.example.gymapplication.ToDoPage
 import com.example.gymapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,37 +21,37 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-
-        val myImageView = findViewById<ImageView>(R.id.profilePage)
-
-        myImageView.setOnClickListener {
-            val intent = Intent(this, ProfilePage::class.java)
-            startActivity(intent)
-        }
-        val imageView: ImageView = findViewById(R.id.favBtn)
-        imageView.setOnClickListener {
-            val intent = Intent(this, WorkoutsPage::class.java)
-            startActivity(intent)
-        }
 
 
-           // Use ViewBinding to inflate the layout
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Enable edge-to-edge layout
         window.setFlags(
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
 
-        // Setup RecyclerView with a horizontal LinearLayoutManager and the WorkoutAdapter
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+        val profileImageView = findViewById<ImageView>(R.id.profilePage)
+        profileImageView.setOnClickListener {
+            val intent = Intent(this, ProfilePage::class.java)
+            startActivity(intent)
+        }
+
+
+        val favImageView = findViewById<ImageView>(R.id.todoBtn)
+        favImageView.setOnClickListener {
+            val intent = Intent(this, ToDoPage::class.java)
+            startActivity(intent)
+        }
+
+
+
         binding.view1.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.view1.adapter = WorkoutAdapter(getData())
     }
 
-    // Function to generate a list of Workout objects
     private fun getData(): ArrayList<Workout> {
         val list = ArrayList<Workout>()
 
@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity() {
         return list
     }
 
-    // Function to generate a list of Lesson objects for the first workout
     private fun getLesson1(): ArrayList<Lesson> {
         val list = ArrayList<Lesson>()
 
@@ -73,7 +72,6 @@ class MainActivity : AppCompatActivity() {
         return list
     }
 
-    // Function to generate a list of Lesson objects for the second workout
     private fun getLesson2(): ArrayList<Lesson> {
         val list = ArrayList<Lesson>()
 
@@ -85,7 +83,6 @@ class MainActivity : AppCompatActivity() {
         return list
     }
 
-    // Function to generate a list of Lesson objects for the third workout
     private fun getLesson3(): ArrayList<Lesson> {
         val list = ArrayList<Lesson>()
 
@@ -95,9 +92,5 @@ class MainActivity : AppCompatActivity() {
         list.add(Lesson("Lesson 4", "21:00", "LqXZ628YNj4", "pic_3_4"))
 
         return list
-
-
-
     }
-
 }

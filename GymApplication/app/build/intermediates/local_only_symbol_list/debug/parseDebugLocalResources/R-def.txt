@@ -71,6 +71,7 @@ drawable play
 drawable profile
 drawable search
 drawable todo_txt
+drawable todolist
 drawable weightloss
 drawable workout
 id OtherWorkouts
@@ -88,7 +89,6 @@ id editTextPhone
 id editTextText
 id editTextUsername
 id exerciseTxt
-id favBtn
 id imageView
 id imageView12
 id imageView14
@@ -158,6 +158,7 @@ id textView72
 id textView8
 id textView9
 id titleTxt
+id todoBtn
 id view
 id view1
 id view3
@@ -245,6 +246,7 @@ string set_reminder
 string sleep_time
 string stretching
 string title
+string todoList
 string total_workout
 string twist_nexcercise
 string user_name

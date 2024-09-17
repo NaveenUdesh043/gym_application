@@ -3161,6 +3161,7 @@ drawable profile
 drawable search
 drawable test_level_drawable
 drawable todo_txt
+drawable todolist
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable weightloss
@@ -3364,7 +3365,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
-id favBtn
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3713,6 +3713,7 @@ id title
 id titleDividerNoCustom
 id titleTxt
 id title_template
+id todoBtn
 id toggle
 id top
 id topPanel
@@ -4198,6 +4199,7 @@ string sleep_time
 string status_bar_notification_info_overflow
 string stretching
 string title
+string todoList
 string total_workout
 string twist_nexcercise
 string user_name
