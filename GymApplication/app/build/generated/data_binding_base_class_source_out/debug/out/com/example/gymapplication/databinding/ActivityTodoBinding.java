@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,29 +24,38 @@ public final class ActivityTodoBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
-  public final Button addTaskButton;
+  public final Button addWorkoutButton;
 
   @NonNull
-  public final Button deleteTaskButton;
+  public final Button deleteWorkoutButton;
 
   @NonNull
-  public final TimePicker reminderTimePicker;
+  public final TextView textView18;
 
   @NonNull
-  public final EditText taskInput;
+  public final EditText workoutDurationInput;
 
   @NonNull
-  public final ListView taskList;
+  public final ListView workoutList;
 
-  private ActivityTodoBinding(@NonNull RelativeLayout rootView, @NonNull Button addTaskButton,
-      @NonNull Button deleteTaskButton, @NonNull TimePicker reminderTimePicker,
-      @NonNull EditText taskInput, @NonNull ListView taskList) {
+  @NonNull
+  public final EditText workoutNameInput;
+
+  @NonNull
+  public final TimePicker workoutTimePicker;
+
+  private ActivityTodoBinding(@NonNull RelativeLayout rootView, @NonNull Button addWorkoutButton,
+      @NonNull Button deleteWorkoutButton, @NonNull TextView textView18,
+      @NonNull EditText workoutDurationInput, @NonNull ListView workoutList,
+      @NonNull EditText workoutNameInput, @NonNull TimePicker workoutTimePicker) {
     this.rootView = rootView;
-    this.addTaskButton = addTaskButton;
-    this.deleteTaskButton = deleteTaskButton;
-    this.reminderTimePicker = reminderTimePicker;
-    this.taskInput = taskInput;
-    this.taskList = taskList;
+    this.addWorkoutButton = addWorkoutButton;
+    this.deleteWorkoutButton = deleteWorkoutButton;
+    this.textView18 = textView18;
+    this.workoutDurationInput = workoutDurationInput;
+    this.workoutList = workoutList;
+    this.workoutNameInput = workoutNameInput;
+    this.workoutTimePicker = workoutTimePicker;
   }
 
   @Override
@@ -75,38 +85,51 @@ public final class ActivityTodoBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.add_task_button;
-      Button addTaskButton = ViewBindings.findChildViewById(rootView, id);
-      if (addTaskButton == null) {
+      id = R.id.add_workout_button;
+      Button addWorkoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (addWorkoutButton == null) {
         break missingId;
       }
 
-      id = R.id.delete_task_button;
-      Button deleteTaskButton = ViewBindings.findChildViewById(rootView, id);
-      if (deleteTaskButton == null) {
+      id = R.id.delete_workout_button;
+      Button deleteWorkoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (deleteWorkoutButton == null) {
         break missingId;
       }
 
-      id = R.id.reminder_time_picker;
-      TimePicker reminderTimePicker = ViewBindings.findChildViewById(rootView, id);
-      if (reminderTimePicker == null) {
+      id = R.id.textView18;
+      TextView textView18 = ViewBindings.findChildViewById(rootView, id);
+      if (textView18 == null) {
         break missingId;
       }
 
-      id = R.id.task_input;
-      EditText taskInput = ViewBindings.findChildViewById(rootView, id);
-      if (taskInput == null) {
+      id = R.id.workout_duration_input;
+      EditText workoutDurationInput = ViewBindings.findChildViewById(rootView, id);
+      if (workoutDurationInput == null) {
         break missingId;
       }
 
-      id = R.id.task_list;
-      ListView taskList = ViewBindings.findChildViewById(rootView, id);
-      if (taskList == null) {
+      id = R.id.workout_list;
+      ListView workoutList = ViewBindings.findChildViewById(rootView, id);
+      if (workoutList == null) {
         break missingId;
       }
 
-      return new ActivityTodoBinding((RelativeLayout) rootView, addTaskButton, deleteTaskButton,
-          reminderTimePicker, taskInput, taskList);
+      id = R.id.workout_name_input;
+      EditText workoutNameInput = ViewBindings.findChildViewById(rootView, id);
+      if (workoutNameInput == null) {
+        break missingId;
+      }
+
+      id = R.id.workout_time_picker;
+      TimePicker workoutTimePicker = ViewBindings.findChildViewById(rootView, id);
+      if (workoutTimePicker == null) {
+        break missingId;
+      }
+
+      return new ActivityTodoBinding((RelativeLayout) rootView, addWorkoutButton,
+          deleteWorkoutButton, textView18, workoutDurationInput, workoutList, workoutNameInput,
+          workoutTimePicker);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

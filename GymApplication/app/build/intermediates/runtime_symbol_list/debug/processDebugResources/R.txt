@@ -2102,6 +2102,7 @@ int color switch_thumb_material_dark 0x7f050303
 int color switch_thumb_material_light 0x7f050304
 int color switch_thumb_normal_material_dark 0x7f050305
 int color switch_thumb_normal_material_light 0x7f050306
+int color todo_button 0x7f05030a
 int color tooltip_background_dark 0x7f050307
 int color tooltip_background_light 0x7f050308
 int color white 0x7f050309
@@ -3158,6 +3159,7 @@ int drawable play 0x7f07011a
 int drawable profile 0x7f07011b
 int drawable search 0x7f07011c
 int drawable test_level_drawable 0x7f07011d
+int drawable todo_txt 0x7f070122
 int drawable tooltip_frame_dark 0x7f07011e
 int drawable tooltip_frame_light 0x7f07011f
 int drawable weightloss 0x7f070120
@@ -3234,7 +3236,7 @@ int id action_text 0x7f080044
 int id actions 0x7f080045
 int id activity_chooser_view_content 0x7f080046
 int id add 0x7f080047
-int id add_task_button 0x7f080249
+int id add_workout_button 0x7f080252
 int id alertTitle 0x7f080048
 int id aligned 0x7f080049
 int id all 0x7f08004a
@@ -3310,7 +3312,7 @@ int id decelerate 0x7f08008f
 int id decelerateAndComplete 0x7f080090
 int id decor_content_parent 0x7f080091
 int id default_activity_button 0x7f080092
-int id delete_task_button 0x7f08024c
+int id delete_workout_button 0x7f080253
 int id deltaRelative 0x7f080093
 int id dependency_ordering 0x7f080094
 int id descriptionTxt 0x7f080095
@@ -3564,7 +3566,6 @@ int id progress_horizontal 0x7f08018c
 int id radio 0x7f08018d
 int id ratio 0x7f08018e
 int id rectangles 0x7f08018f
-int id reminder_time_picker 0x7f080251
 int id report_drawn 0x7f080190
 int id reverseSawtooth 0x7f080191
 int id right 0x7f080192
@@ -3657,8 +3658,6 @@ int id tag_unhandled_key_listeners 0x7f0801e8
 int id tag_window_insets_animation_callback 0x7f0801e9
 int id task_datetime 0x7f08024d
 int id task_description 0x7f08024e
-int id task_input 0x7f08024a
-int id task_list 0x7f08024b
 int id task_reminder_time 0x7f080250
 int id text 0x7f0801ea
 int id text2 0x7f0801eb
@@ -3750,6 +3749,10 @@ int id withText 0x7f080240
 int id with_icon 0x7f080241
 int id withinBounds 0x7f080242
 int id workoutPage 0x7f080243
+int id workout_duration_input 0x7f080254
+int id workout_list 0x7f080255
+int id workout_name_input 0x7f080256
+int id workout_time_picker 0x7f080257
 int id wrap 0x7f080244
 int id wrap_content 0x7f080245
 int id wrap_content_constrained 0x7f080246
@@ -4187,6 +4190,7 @@ int string searchbar_scrolling_view_behavior 0x7f0f00d8
 int string searchview_clear_text_content_description 0x7f0f00d9
 int string searchview_navigation_content_description 0x7f0f00da
 int string see_all 0x7f0f00db
+int string set_reminder 0x7f0f00eb
 int string side_sheet_accessibility_pane_title 0x7f0f00dc
 int string side_sheet_behavior 0x7f0f00dd
 int string sleep_time 0x7f0f00de
@@ -4493,6 +4497,7 @@ int style Base_Widget_MaterialComponents_TextView 0x7f10011f
 int style CardView 0x7f100120
 int style CardView_Dark 0x7f100121
 int style CardView_Light 0x7f100122
+int style CustomTimePicker 0x7f10046d
 int style MaterialAlertDialog_Material3 0x7f100123
 int style MaterialAlertDialog_Material3_Animation 0x7f100124
 int style MaterialAlertDialog_Material3_Body_Text 0x7f100125

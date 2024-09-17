@@ -39,18 +39,17 @@
                 android:id="@+id/editTextUsername"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="128dp"
-                android:layout_marginBottom="16dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="128dp"
                 android:layout_marginEnd="32dp"
-                android:hint="@string/usernameLogin"
-                android:textAlignment="center"
-                android:ems="10"
-                android:inputType="text"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/next_bt_bg"
-                />
+                android:ems="10"
+                android:hint="@string/usernameLogin"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
 
             <EditText
                 android:id="@+id/editTextPassword"

@@ -36,7 +36,7 @@
             android:name="com.example.gymapplication.ProfilePage"
             android:exported="false" />
         <activity
-            android:name="com.example.gymapplication.Activity.WorkoutActivity"
+            android:name="com.example.gymapplication.activity.WorkoutActivity"
             android:exported="false" />
         <activity
             android:name="com.example.gymapplication.Onboarding2"
@@ -57,9 +57,9 @@
             android:name="com.example.gymapplication.ToDoPage"
             android:exported="false" />
 
-        <receiver
-            android:name="com.example.gymapplication.ReminderBroadcastReceiver"
-            android:exported="false" />
+        <!-- <receiver -->
+        <!-- android:name=".ReminderBroadcastReceiver" -->
+        <!-- android:exported="false" /> -->
 
         <activity
             android:name="com.example.gymapplication.Onboarding1"
@@ -71,10 +71,10 @@
             android:name="com.example.gymapplication.WorkoutActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.gymapplication.Activity.MainActivity"
+            android:name="com.example.gymapplication.activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.gymapplication.Activity.IntroActivity"
+            android:name="com.example.gymapplication.activity.IntroActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

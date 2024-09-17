@@ -1,4 +1,4 @@
-package com.example.gymapplication.Activity
+package com.example.gymapplication.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,9 @@ import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.gymapplication.Adapter.WorkoutAdapter
-import com.example.gymapplication.Domain.Lesson
-import com.example.gymapplication.Domain.Workout
+import com.example.gymapplication.adapter.WorkoutAdapter
+import com.example.gymapplication.domain.Lesson
+import com.example.gymapplication.domain.Workout
 import com.example.gymapplication.ProfilePage
 import com.example.gymapplication.R
 import com.example.gymapplication.WorkoutsPage

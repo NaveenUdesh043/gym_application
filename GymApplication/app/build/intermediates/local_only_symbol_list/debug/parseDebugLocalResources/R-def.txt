@@ -4,6 +4,7 @@ color black
 color darkBlue
 color mainColor
 color orange
+color todo_button
 color white
 dimen btn_margin
 dimen large_margin
@@ -69,15 +70,16 @@ drawable pic_3_4
 drawable play
 drawable profile
 drawable search
+drawable todo_txt
 drawable weightloss
 drawable workout
 id OtherWorkouts
-id add_task_button
+id add_workout_button
 id backBtn
 id button
 id cartBtn
 id coordinatorLayout
-id delete_task_button
+id delete_workout_button
 id descriptionTxt
 id durationTxt
 id editTextName
@@ -113,7 +115,6 @@ id onboarding3
 id pic2
 id profileBtn
 id profilePage
-id reminder_time_picker
 id scrollView2
 id scrollView3
 id scrollView5
@@ -123,8 +124,6 @@ id shapeableImageView2
 id signinTxt
 id task_datetime
 id task_description
-id task_input
-id task_list
 id task_reminder_time
 id textView
 id textView10
@@ -163,6 +162,10 @@ id view
 id view1
 id view3
 id workoutPage
+id workout_duration_input
+id workout_list
+id workout_name_input
+id workout_time_picker
 layout activity_create_acoount
 layout activity_forgot_password
 layout activity_intro
@@ -238,6 +241,7 @@ string push_yourself_nto_the_limit
 string re_enter_password
 string search_workout
 string see_all
+string set_reminder
 string sleep_time
 string stretching
 string title
@@ -251,6 +255,7 @@ string welcome_to_nfitlifebudddy
 string you_just_woke_up_it_is_a_brand_new_day_the_canvas_is_blank_how_do_you_begin_take_21_minutes_to_cultivate_a_peaceful_mind_and_strong_body
 style Base.Theme.GymApplication
 style Base.Theme.Tute03
+style CustomTimePicker
 style ShapeAppearanceOverlay.App.circleImageView
 style Style.App.circleImageView
 style Theme.GymApplication

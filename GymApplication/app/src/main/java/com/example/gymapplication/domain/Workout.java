@@ -1,4 +1,4 @@
-package com.example.gymapplication.Domain;
+package com.example.gymapplication.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;

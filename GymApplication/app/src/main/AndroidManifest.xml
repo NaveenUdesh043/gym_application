@@ -21,7 +21,7 @@
             android:name=".ProfilePage"
             android:exported="false" />
         <activity
-            android:name=".Activity.WorkoutActivity"
+            android:name=".activity.WorkoutActivity"
             android:exported="false" />
         <activity
             android:name=".Onboarding2"
@@ -42,9 +42,9 @@
             android:name=".ToDoPage"
             android:exported="false" />
 
-        <receiver
-            android:name=".ReminderBroadcastReceiver"
-            android:exported="false" />
+<!--        <receiver-->
+<!--            android:name=".ReminderBroadcastReceiver"-->
+<!--            android:exported="false" />-->
 
         <activity
             android:name=".Onboarding1"
@@ -56,10 +56,10 @@
             android:name=".WorkoutActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.IntroActivity"
+            android:name=".activity.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

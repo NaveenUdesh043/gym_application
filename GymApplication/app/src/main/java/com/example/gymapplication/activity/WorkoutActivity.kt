@@ -1,12 +1,12 @@
-package com.example.gymapplication.Activity
+package com.example.gymapplication.activity
 
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
-import com.example.gymapplication.Adapter.LessonsAdapter
-import com.example.gymapplication.Domain.Workout
+import com.example.gymapplication.adapter.LessonsAdapter
+import com.example.gymapplication.domain.Workout
 import com.example.gymapplication.databinding.ActivityWorkoutBinding
 
 class WorkoutActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.gymapplication.Adapter;
+package com.example.gymapplication.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.gymapplication.Domain.Workout;
+import com.example.gymapplication.domain.Workout;
 import com.example.gymapplication.WorkoutActivity;
 import com.example.gymapplication.databinding.ViewholderWorkoutBinding;
 

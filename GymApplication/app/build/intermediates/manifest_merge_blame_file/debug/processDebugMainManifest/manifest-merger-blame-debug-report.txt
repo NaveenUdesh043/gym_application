@@ -60,7 +60,7 @@
 37-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:22:13-37
 38        <activity
 38-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:23:9-25:40
-39            android:name="com.example.gymapplication.Activity.WorkoutActivity"
+39            android:name="com.example.gymapplication.activity.WorkoutActivity"
 39-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:24:13-53
 40            android:exported="false" />
 40-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:25:13-37
@@ -101,12 +101,9 @@
 58            android:exported="false" />
 58-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:43:13-37
 59
-60        <receiver
-60-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:45:9-47:40
-61            android:name="com.example.gymapplication.ReminderBroadcastReceiver"
-61-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:46:13-54
-62            android:exported="false" />
-62-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:47:13-37
+60        <!-- <receiver -->
+61        <!-- android:name=".ReminderBroadcastReceiver" -->
+62        <!-- android:exported="false" /> -->
 63
 64        <activity
 64-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:49:9-51:40
@@ -128,13 +125,13 @@
 72-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:57:13-37
 73        <activity
 73-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:58:9-60:40
-74            android:name="com.example.gymapplication.Activity.MainActivity"
+74            android:name="com.example.gymapplication.activity.MainActivity"
 74-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:59:13-50
 75            android:exported="false" />
 75-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:60:13-37
 76        <activity
 76-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:61:9-71:20
-77            android:name="com.example.gymapplication.Activity.IntroActivity"
+77            android:name="com.example.gymapplication.activity.IntroActivity"
 77-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:62:13-51
 78            android:exported="true" >
 78-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:63:13-36

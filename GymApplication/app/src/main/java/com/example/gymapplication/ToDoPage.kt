@@ -10,146 +10,149 @@ import android.os.Looper
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
-import com.example.gymapplication.Domain.Task
+import com.example.gymapplication.domain.Task
 import java.util.*
 
 class ToDoPage : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
-    private lateinit var taskInput: EditText
-    private lateinit var addTaskButton: Button
-    private lateinit var deleteTaskButton: Button
-    private lateinit var taskListView: ListView
-    private lateinit var reminderTimePicker: TimePicker
-    private val taskList = mutableListOf<Task>()
-    private lateinit var taskAdapter: TaskAdapter
-    private var selectedTaskIndex: Int? = null
+    private lateinit var workoutNameInput: EditText
+    private lateinit var workoutDurationInput: EditText
+    private lateinit var addWorkoutButton: Button
+    private lateinit var deleteWorkoutButton: Button
+    private lateinit var workoutListView: ListView
+    private lateinit var workoutTimePicker: TimePicker
+    private val workoutList = mutableListOf<Task>()
+    private lateinit var workoutAdapter: TaskAdapter
+    private var selectedWorkoutIndex: Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todo)
 
-        sharedPreferences = getSharedPreferences("tasks_prefs", Context.MODE_PRIVATE)
-        taskInput = findViewById(R.id.task_input)
-        addTaskButton = findViewById(R.id.add_task_button)
-        deleteTaskButton = findViewById(R.id.delete_task_button)
-        taskListView = findViewById(R.id.task_list)
-        reminderTimePicker = findViewById(R.id.reminder_time_picker)
+        sharedPreferences = getSharedPreferences("workouts_prefs", Context.MODE_PRIVATE)
+        workoutNameInput = findViewById(R.id.workout_name_input)
+        workoutDurationInput = findViewById(R.id.workout_duration_input)
+        addWorkoutButton = findViewById(R.id.add_workout_button)
+        deleteWorkoutButton = findViewById(R.id.delete_workout_button)
+        workoutListView = findViewById(R.id.workout_list)
+        workoutTimePicker = findViewById(R.id.workout_time_picker)
 
-        taskAdapter = TaskAdapter(this, taskList)
-        taskListView.adapter = taskAdapter
+        workoutAdapter = TaskAdapter(this, workoutList)
+        workoutListView.adapter = workoutAdapter
 
-        addTaskButton.setOnClickListener {
-            addTask()
+        addWorkoutButton.setOnClickListener {
+            addWorkout()
         }
 
-        deleteTaskButton.setOnClickListener {
-            deleteTask()
+        deleteWorkoutButton.setOnClickListener {
+            deleteWorkout()
         }
 
-        taskListView.setOnItemClickListener { _, _, position, _ ->
-            selectedTaskIndex = position
-            taskInput.setText(taskList[position].description)
+        workoutListView.setOnItemClickListener { _, _, position, _ ->
+            selectedWorkoutIndex = position
+            workoutNameInput.setText(workoutList[position].description)
         }
 
-        loadTasks()
+        loadWorkouts()
         startNotificationService()
     }
 
-    private fun addTask() {
-        val taskDescription = taskInput.text.toString()
-        val taskDateTime = Calendar.getInstance().timeInMillis
-
+    private fun addWorkout() {
+        val workoutName = workoutNameInput.text.toString()
+        val workoutDuration = workoutDurationInput.text.toString()
+        val workoutDateTime = Calendar.getInstance().timeInMillis
 
         val reminderCalendar = Calendar.getInstance()
-        reminderCalendar.set(Calendar.HOUR_OF_DAY, reminderTimePicker.hour)
-        reminderCalendar.set(Calendar.MINUTE, reminderTimePicker.minute)
+        reminderCalendar.set(Calendar.HOUR_OF_DAY, workoutTimePicker.hour)
+        reminderCalendar.set(Calendar.MINUTE, workoutTimePicker.minute)
         reminderCalendar.set(Calendar.SECOND, 0)
         val reminderTime = reminderCalendar.timeInMillis
 
-        if (taskDescription.isNotEmpty()) {
-            if (selectedTaskIndex != null) {
-
-                val task = taskList[selectedTaskIndex!!]
-                task.description = taskDescription
-                task.dateTime = taskDateTime
-                task.reminderTime = reminderTime
-                selectedTaskIndex = null
+        if (workoutName.isNotEmpty() && workoutDuration.isNotEmpty()) {
+            if (selectedWorkoutIndex != null) {
+                val workout = workoutList[selectedWorkoutIndex!!]
+                workout.description = workoutName
+                workout.dateTime = workoutDateTime
+                workout.reminderTime = reminderTime
+                selectedWorkoutIndex = null
             } else {
-                val task = Task(taskDescription, taskDateTime, reminderTime)
-                taskList.add(task)
+                val workout = Task(workoutName, workoutDateTime, reminderTime)
+                workoutList.add(workout)
             }
-            saveTasks()
-            updateTaskAdapter()
-            taskInput.text.clear()
+            saveWorkouts()
+            updateWorkoutAdapter()
+            workoutNameInput.text.clear()
+            workoutDurationInput.text.clear()
         }
     }
 
-    private fun deleteTask() {
-        selectedTaskIndex?.let { index ->
-            taskList.removeAt(index)
-            selectedTaskIndex = null
-            saveTasks()
-            updateTaskAdapter()
-            taskInput.text.clear()
+    private fun deleteWorkout() {
+        selectedWorkoutIndex?.let { index ->
+            workoutList.removeAt(index)
+            selectedWorkoutIndex = null
+            saveWorkouts()
+            updateWorkoutAdapter()
+            workoutNameInput.text.clear()
+            workoutDurationInput.text.clear()
         }
     }
 
-    private fun saveTasks() {
+    private fun saveWorkouts() {
         val editor = sharedPreferences.edit()
         editor.clear()
-        for ((index, task) in taskList.withIndex()) {
-            editor.putString("task_$index", "${task.description}|${task.dateTime}|${task.reminderTime}")
+        for ((index, workout) in workoutList.withIndex()) {
+            editor.putString("workout_$index", "${workout.description}|${workout.dateTime}|${workout.reminderTime}")
         }
-        editor.putInt("task_count", taskList.size)
+        editor.putInt("workout_count", workoutList.size)
         editor.apply()
     }
 
-    private fun loadTasks() {
-        val count = sharedPreferences.getInt("task_count", 0)
-        taskList.clear()
+    private fun loadWorkouts() {
+        val count = sharedPreferences.getInt("workout_count", 0)
+        workoutList.clear()
         for (i in 0 until count) {
-            val taskString = sharedPreferences.getString("task_$i", null) ?: continue
-            val (description, dateTime, reminderTime) = taskString.split("|")
-            taskList.add(Task(description, dateTime.toLong(), reminderTime.toLong()))
+            val workoutString = sharedPreferences.getString("workout_$i", null) ?: continue
+            val (description, dateTime, reminderTime) = workoutString.split("|")
+            workoutList.add(Task(description, dateTime.toLong(), reminderTime.toLong()))
         }
-        updateTaskAdapter()
+        updateWorkoutAdapter()
     }
 
-    private fun updateTaskAdapter() {
-        taskAdapter.notifyDataSetChanged()
+    private fun updateWorkoutAdapter() {
+        workoutAdapter.notifyDataSetChanged()
     }
 
     private fun startNotificationService() {
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed(object : Runnable {
             override fun run() {
-                checkTasksDue()
+                checkWorkoutsDue()
                 handler.postDelayed(this, 60000)
             }
         }, 0)
     }
 
-    private fun checkTasksDue() {
+    private fun checkWorkoutsDue() {
         val currentTime = Calendar.getInstance().timeInMillis
-        for (task in taskList) {
-            if (task.dateTime <= currentTime) {
-                sendNotification(task, "Task Due", "Task: ${task.description}")
-                taskList.remove(task)
-                saveTasks()
-                updateTaskAdapter()
+        for (workout in workoutList) {
+            if (workout.dateTime <= currentTime) {
+                sendNotification(workout, "Workout Due", "Workout: ${workout.description}")
+                workoutList.remove(workout)
+                saveWorkouts()
+                updateWorkoutAdapter()
                 break
-            } else if (task.reminderTime <= currentTime) {
-                sendNotification(task, "Task Reminder", "Reminder: ${task.description}")
+            } else if (workout.reminderTime <= currentTime) {
+                sendNotification(workout, "Workout Reminder", "Reminder: ${workout.description}")
                 break
             }
         }
     }
 
-    private fun sendNotification(task: Task, title: String, message: String) {
+    private fun sendNotification(workout: Task, title: String, message: String) {
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        val channelId = "task_channel"
-        val channel = NotificationChannel(channelId, "Task Notifications", NotificationManager.IMPORTANCE_DEFAULT)
+        val channelId = "workout_channel"
+        val channel = NotificationChannel(channelId, "Workout Notifications", NotificationManager.IMPORTANCE_DEFAULT)
         notificationManager.createNotificationChannel(channel)
 
         val notification = NotificationCompat.Builder(this, channelId)
