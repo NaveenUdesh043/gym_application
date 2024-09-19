@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="onbordingHeading">Workouts Tailored and Just for You</string>
+    <string name="running">Running</string>
     <string name="set_reminder">Set Reminder</string>
     <string name="todoList">Todo List</string>
     <style name="Base.Theme.Tute03" parent="Theme.Material3.DayNight.NoActionBar">

@@ -3266,8 +3266,8 @@ int id bounce 0x7f080061
 int id bounceBoth 0x7f080062
 int id bounceEnd 0x7f080063
 int id bounceStart 0x7f080064
-int id button 0x7f080065
 int id buttonPanel 0x7f080066
+int id buttonStart 0x7f08025f
 int id cache_measures 0x7f080067
 int id callMeasure 0x7f080068
 int id cancel_button 0x7f080069
@@ -3552,6 +3552,7 @@ int id parent_matrix 0x7f080180
 int id password_toggle 0x7f080181
 int id path 0x7f080182
 int id pathRelative 0x7f080183
+int id pauseButton 0x7f080259
 int id peekHeight 0x7f080184
 int id percent 0x7f080185
 int id pic2 0x7f080186
@@ -3567,6 +3568,7 @@ int id radio 0x7f08018f
 int id ratio 0x7f080190
 int id rectangles 0x7f080191
 int id report_drawn 0x7f080192
+int id resetButton 0x7f08025a
 int id reverseSawtooth 0x7f080193
 int id right 0x7f080194
 int id rightToLeft 0x7f080195
@@ -3632,12 +3634,15 @@ int id src_in 0x7f0801d0
 int id src_over 0x7f0801d1
 int id standard 0x7f0801d2
 int id start 0x7f0801d3
+int id startButton 0x7f08025b
 int id startHorizontal 0x7f0801d4
 int id startToEnd 0x7f0801d5
 int id startVertical 0x7f0801d6
 int id staticLayout 0x7f0801d7
 int id staticPostLayout 0x7f0801d8
 int id stop 0x7f0801d9
+int id stopwatch 0x7f08025c
+int id stopwatchDisplay 0x7f08025d
 int id stretch 0x7f0801da
 int id submenuarrow 0x7f0801db
 int id submit_area 0x7f0801dc
@@ -3754,6 +3759,7 @@ int id workout_duration_input 0x7f080249
 int id workout_list 0x7f08024a
 int id workout_name_input 0x7f08024b
 int id workout_time_picker 0x7f08024c
+int id workoutsPage 0x7f080262
 int id wrap 0x7f08024d
 int id wrap_content 0x7f08024e
 int id wrap_content_constrained 0x7f08024f
@@ -3882,6 +3888,7 @@ int layout activity_onboarding1 0x7f0b0021
 int layout activity_onboarding2 0x7f0b0022
 int layout activity_onboarding3 0x7f0b0023
 int layout activity_profile_page 0x7f0b0024
+int layout activity_stopwatch 0x7f0b007a
 int layout activity_task_list_time 0x7f0b0025
 int layout activity_todo 0x7f0b0026
 int layout activity_workout 0x7f0b0027
@@ -4185,6 +4192,7 @@ int string phone_number 0x7f0f00d3
 int string profile 0x7f0f00d4
 int string push_yourself_nto_the_limit 0x7f0f00d5
 int string re_enter_password 0x7f0f00d6
+int string running 0x7f0f00ef
 int string search_menu_title 0x7f0f00d7
 int string search_workout 0x7f0f00d8
 int string searchbar_scrolling_view_behavior 0x7f0f00d9

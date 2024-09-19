@@ -27,7 +27,7 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
   public final ImageView backBtn;
 
   @NonNull
-  public final AppCompatButton button;
+  public final AppCompatButton buttonStart;
 
   @NonNull
   public final TextView descriptionTxt;
@@ -96,22 +96,23 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
   public final View view;
 
   @NonNull
-  public final ConstraintLayout workoutPage;
+  public final ConstraintLayout workoutsPage;
 
   private ActivityWorkoutsPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView backBtn, @NonNull AppCompatButton button, @NonNull TextView descriptionTxt,
-      @NonNull TextView durationTxt, @NonNull TextView exerciseTxt, @NonNull ImageView imageView7,
-      @NonNull ImageView imageView8, @NonNull ImageView imageView81, @NonNull ImageView imageView82,
-      @NonNull TextView kcalTxt, @NonNull ImageView pic2, @NonNull ScrollView scrollView3,
+      @NonNull ImageView backBtn, @NonNull AppCompatButton buttonStart,
+      @NonNull TextView descriptionTxt, @NonNull TextView durationTxt,
+      @NonNull TextView exerciseTxt, @NonNull ImageView imageView7, @NonNull ImageView imageView8,
+      @NonNull ImageView imageView81, @NonNull ImageView imageView82, @NonNull TextView kcalTxt,
+      @NonNull ImageView pic2, @NonNull ScrollView scrollView3,
       @NonNull ShapeableImageView shapeableImageView,
       @NonNull ShapeableImageView shapeableImageView1,
       @NonNull ShapeableImageView shapeableImageView2, @NonNull TextView textView14,
       @NonNull TextView textView15, @NonNull TextView textView17, @NonNull TextView textView20,
       @NonNull TextView textView6, @NonNull TextView textView61, @NonNull TextView textView62,
-      @NonNull TextView titleTxt, @NonNull View view, @NonNull ConstraintLayout workoutPage) {
+      @NonNull TextView titleTxt, @NonNull View view, @NonNull ConstraintLayout workoutsPage) {
     this.rootView = rootView;
     this.backBtn = backBtn;
-    this.button = button;
+    this.buttonStart = buttonStart;
     this.descriptionTxt = descriptionTxt;
     this.durationTxt = durationTxt;
     this.exerciseTxt = exerciseTxt;
@@ -134,7 +135,7 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
     this.textView62 = textView62;
     this.titleTxt = titleTxt;
     this.view = view;
-    this.workoutPage = workoutPage;
+    this.workoutsPage = workoutsPage;
   }
 
   @Override
@@ -170,9 +171,9 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button;
-      AppCompatButton button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.buttonStart;
+      AppCompatButton buttonStart = ViewBindings.findChildViewById(rootView, id);
+      if (buttonStart == null) {
         break missingId;
       }
 
@@ -308,13 +309,13 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
         break missingId;
       }
 
-      ConstraintLayout workoutPage = (ConstraintLayout) rootView;
+      ConstraintLayout workoutsPage = (ConstraintLayout) rootView;
 
-      return new ActivityWorkoutsPageBinding((ConstraintLayout) rootView, backBtn, button,
+      return new ActivityWorkoutsPageBinding((ConstraintLayout) rootView, backBtn, buttonStart,
           descriptionTxt, durationTxt, exerciseTxt, imageView7, imageView8, imageView81,
           imageView82, kcalTxt, pic2, scrollView3, shapeableImageView, shapeableImageView1,
           shapeableImageView2, textView14, textView15, textView17, textView20, textView6,
-          textView61, textView62, titleTxt, view, workoutPage);
+          textView61, textView62, titleTxt, view, workoutsPage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

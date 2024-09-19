@@ -2182,6 +2182,7 @@
     <string name="profile">Profile</string>
     <string name="push_yourself_nto_the_limit">PUSH YOURSELF\nTO THE LIMIT</string>
     <string name="re_enter_password">Re-enter Password</string>
+    <string name="running">Running</string>
     <string name="search_menu_title">Search</string>
     <string name="search_workout">Search Workout...</string>
     <string name="searchbar_scrolling_view_behavior" translatable="false">

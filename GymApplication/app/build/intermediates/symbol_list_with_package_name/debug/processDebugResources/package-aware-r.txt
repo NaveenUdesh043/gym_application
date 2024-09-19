@@ -3267,8 +3267,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id buttonPanel
+id buttonStart
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3553,6 +3553,7 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pauseButton
 id peekHeight
 id percent
 id pic2
@@ -3568,6 +3569,7 @@ id radio
 id ratio
 id rectangles
 id report_drawn
+id resetButton
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3633,12 +3635,15 @@ id src_in
 id src_over
 id standard
 id start
+id startButton
 id startHorizontal
 id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id stopwatch
+id stopwatchDisplay
 id stretch
 id submenuarrow
 id submit_area
@@ -3755,6 +3760,7 @@ id workout_duration_input
 id workout_list
 id workout_name_input
 id workout_time_picker
+id workoutsPage
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -3883,6 +3889,7 @@ layout activity_onboarding1
 layout activity_onboarding2
 layout activity_onboarding3
 layout activity_profile_page
+layout activity_stopwatch
 layout activity_task_list_time
 layout activity_todo
 layout activity_workout
@@ -4186,6 +4193,7 @@ string phone_number
 string profile
 string push_yourself_nto_the_limit
 string re_enter_password
+string running
 string search_menu_title
 string search_workout
 string searchbar_scrolling_view_behavior

@@ -27,7 +27,7 @@ public final class ActivityWorkoutBinding implements ViewBinding {
   public final ImageView backBtn;
 
   @NonNull
-  public final AppCompatButton button;
+  public final AppCompatButton buttonStart;
 
   @NonNull
   public final TextView descriptionTxt;
@@ -75,7 +75,7 @@ public final class ActivityWorkoutBinding implements ViewBinding {
   public final ConstraintLayout workoutPage;
 
   private ActivityWorkoutBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView backBtn,
-      @NonNull AppCompatButton button, @NonNull TextView descriptionTxt,
+      @NonNull AppCompatButton buttonStart, @NonNull TextView descriptionTxt,
       @NonNull TextView durationTxt, @NonNull TextView exerciseTxt, @NonNull ImageView imageView7,
       @NonNull TextView kcalTxt, @NonNull ImageView pic2, @NonNull ScrollView scrollView3,
       @NonNull TextView textView14, @NonNull TextView textView15, @NonNull TextView textView17,
@@ -83,7 +83,7 @@ public final class ActivityWorkoutBinding implements ViewBinding {
       @NonNull RecyclerView view3, @NonNull ConstraintLayout workoutPage) {
     this.rootView = rootView;
     this.backBtn = backBtn;
-    this.button = button;
+    this.buttonStart = buttonStart;
     this.descriptionTxt = descriptionTxt;
     this.durationTxt = durationTxt;
     this.exerciseTxt = exerciseTxt;
@@ -134,9 +134,9 @@ public final class ActivityWorkoutBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button;
-      AppCompatButton button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
+      id = R.id.buttonStart;
+      AppCompatButton buttonStart = ViewBindings.findChildViewById(rootView, id);
+      if (buttonStart == null) {
         break missingId;
       }
 
@@ -226,7 +226,7 @@ public final class ActivityWorkoutBinding implements ViewBinding {
 
       ConstraintLayout workoutPage = (ConstraintLayout) rootView;
 
-      return new ActivityWorkoutBinding((ConstraintLayout) rootView, backBtn, button,
+      return new ActivityWorkoutBinding((ConstraintLayout) rootView, backBtn, buttonStart,
           descriptionTxt, durationTxt, exerciseTxt, imageView7, kcalTxt, pic2, scrollView3,
           textView14, textView15, textView17, textView20, titleTxt, view, view3, workoutPage);
     }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-74:12
-INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-74:12
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:2:1-77:12
 MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\NaveenSilva\.gradle\caches\transforms-4\69be8b6f4fde1f6b0b482191e07fceb0\transformed\viewbinding-8.5.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\NaveenSilva\.gradle\caches\transforms-4\4ed3d082c40ca564d8646d8a4cd9eaae\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\NaveenSilva\.gradle\caches\transforms-4\0b85ffdc262bd41279ef498d1d7c69fc\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -64,8 +64,8 @@ ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\
 	android:name
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:7:5-72:19
-INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:7:5-72:19
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:7:5-75:19
+INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:7:5-75:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\NaveenSilva\.gradle\caches\transforms-4\4ed3d082c40ca564d8646d8a4cd9eaae\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\NaveenSilva\.gradle\caches\transforms-4\4ed3d082c40ca564d8646d8a4cd9eaae\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\NaveenSilva\.gradle\caches\transforms-4\0b85ffdc262bd41279ef498d1d7c69fc\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -175,9 +175,9 @@ ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\
 	android:name
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:53:13-48
 activity#com.example.gymapplication.WorkoutActivity
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:55:9-57:40
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:55:9-57:39
 	android:exported
-		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:57:13-37
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:57:13-36
 	android:name
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:56:13-44
 activity#com.example.gymapplication.activity.MainActivity
@@ -186,22 +186,28 @@ ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:60:13-37
 	android:name
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:59:13-50
-activity#com.example.gymapplication.activity.IntroActivity
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:61:9-71:20
+activity#com.example.gymapplication.StopWatch
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:61:9-63:39
 	android:exported
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:63:13-36
 	android:name
-		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:62:13-51
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:62:13-38
+activity#com.example.gymapplication.activity.IntroActivity
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:64:9-74:20
+	android:exported
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:66:13-36
+	android:name
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:65:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:64:13-70:29
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:67:13-73:29
 action#android.intent.action.MAIN
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:65:17-69
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:68:17-69
 	android:name
-		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:65:25-66
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:68:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:67:17-77
+ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:70:17-77
 	android:name
-		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:67:27-74
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:70:27-74
 uses-sdk
 INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml

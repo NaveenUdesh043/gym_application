@@ -77,7 +77,7 @@ drawable workout
 id OtherWorkouts
 id add_workout_button
 id backBtn
-id button
+id buttonStart
 id cartBtn
 id coordinatorLayout
 id delete_workout_button
@@ -112,9 +112,11 @@ id nextBtn
 id nextBtn1
 id onboarding2
 id onboarding3
+id pauseButton
 id pic2
 id profileBtn
 id profilePage
+id resetButton
 id scrollView2
 id scrollView3
 id scrollView5
@@ -122,6 +124,9 @@ id shapeableImageView
 id shapeableImageView1
 id shapeableImageView2
 id signinTxt
+id startButton
+id stopwatch
+id stopwatchDisplay
 id task_datetime
 id task_description
 id task_reminder_time
@@ -167,6 +172,7 @@ id workout_duration_input
 id workout_list
 id workout_name_input
 id workout_time_picker
+id workoutsPage
 layout activity_create_acoount
 layout activity_forgot_password
 layout activity_intro
@@ -176,6 +182,7 @@ layout activity_onboarding1
 layout activity_onboarding2
 layout activity_onboarding3
 layout activity_profile_page
+layout activity_stopwatch
 layout activity_task_list_time
 layout activity_todo
 layout activity_workout
@@ -240,6 +247,7 @@ string phone_number
 string profile
 string push_yourself_nto_the_limit
 string re_enter_password
+string running
 string search_workout
 string see_all
 string set_reminder

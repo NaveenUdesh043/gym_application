@@ -69,10 +69,13 @@
             android:exported="false" />
         <activity
             android:name="com.example.gymapplication.WorkoutActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name="com.example.gymapplication.activity.MainActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.gymapplication.StopWatch"
+            android:exported="true" />
         <activity
             android:name="com.example.gymapplication.activity.IntroActivity"
             android:exported="true" >

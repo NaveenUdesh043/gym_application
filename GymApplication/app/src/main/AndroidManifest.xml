@@ -54,10 +54,13 @@
             android:exported="false" />
         <activity
             android:name=".WorkoutActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".activity.MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".StopWatch"
+            android:exported="true" />
         <activity
             android:name=".activity.IntroActivity"
             android:exported="true">
