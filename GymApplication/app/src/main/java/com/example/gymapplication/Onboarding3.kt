@@ -14,7 +14,7 @@ class Onboarding3 : AppCompatActivity() {
         setContentView(R.layout.activity_onboarding3)
         val startBtn: Button = findViewById(R.id.nextBtn)
         startBtn.setOnClickListener{
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
         }
     }

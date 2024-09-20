@@ -110,6 +110,7 @@ id loginPage
 id loginTxt
 id nextBtn
 id nextBtn1
+id onb2
 id onboarding2
 id onboarding3
 id pauseButton

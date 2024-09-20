@@ -22,13 +22,9 @@ class IntroActivity : AppCompatActivity() {
 
         val startBtn: Button = findViewById(R.id.nextBtn)
         startBtn.setOnClickListener{
-            val intent = Intent(this, LoginPage::class.java)
+            val intent = Intent(this, Onboarding1::class.java)
             startActivity(intent)
         }
-        val navigateTextView: TextView = findViewById(R.id.signinTxt)
-        navigateTextView.setOnClickListener {
-            val intent = Intent(this, CreateAcoount::class.java)
-            startActivity(intent)
-        }
+
     }
 }

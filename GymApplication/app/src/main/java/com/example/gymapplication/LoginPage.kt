@@ -9,12 +9,15 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.gymapplication.activity.MainActivity
 
 class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login_page)
+
+
 
         val usernameEditText: EditText = findViewById(R.id.editTextUsername)
         val passwordEditText: EditText = findViewById(R.id.editTextPassword)
@@ -24,6 +27,11 @@ class LoginPage : AppCompatActivity() {
         val navigateTextView: TextView = findViewById(R.id.loginTxt)
         navigateTextView.setOnClickListener {
             val intent = Intent(this, ForgotPassword::class.java)
+            startActivity(intent)
+        }
+        val navigateTextView1: TextView = findViewById(R.id.signinTxt)
+        navigateTextView1.setOnClickListener {
+            val intent = Intent(this, CreateAcoount::class.java)
             startActivity(intent)
         }
 
@@ -41,7 +49,7 @@ class LoginPage : AppCompatActivity() {
                 val savedPassword = sharedPref.getString("password", null)
 
                 if (enteredUsername == savedUsername && enteredPassword == savedPassword) {
-                    val intent = Intent(this, Onboarding1::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                 } else {

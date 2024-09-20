@@ -31,7 +31,7 @@
     <string name="favorite">Favorite</string>
     <string name="fitness_goals">Fitness Goals:</string>
     <string name="forgot_password">Forgot Password</string>
-    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="forgot_your_password">Forgot your password? \n\n or</string>
     <string name="full_name">Full Name</string>
     <string name="get_started">Get Started</string>
     <string name="goals">Goals:</string>
@@ -46,7 +46,7 @@
     <string name="log_out">Log Out</string>
     <string name="loginBtn">Login</string>
     <string name="loginBtnCreateAcc">Signup</string>
-    <string name="loginTxt">Are you have an account? <font color="#FD511E">SignUp</font></string>
+    <string name="loginTxt">Do you have an account? <font color="#FD511E">SignUp</font></string>
     <string name="new_password">New Password</string>
     <string name="nextBtn1">Next</string>
     <string name="nextBtn2">Next</string>

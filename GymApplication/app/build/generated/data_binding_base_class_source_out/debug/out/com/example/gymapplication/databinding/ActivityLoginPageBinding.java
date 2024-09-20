@@ -37,18 +37,22 @@ public final class ActivityLoginPageBinding implements ViewBinding {
   public final AppCompatButton nextBtn;
 
   @NonNull
+  public final TextView signinTxt;
+
+  @NonNull
   public final TextView textView18;
 
   private ActivityLoginPageBinding(@NonNull ConstraintLayout rootView,
       @NonNull EditText editTextPassword, @NonNull EditText editTextUsername,
       @NonNull ConstraintLayout loginPage, @NonNull TextView loginTxt,
-      @NonNull AppCompatButton nextBtn, @NonNull TextView textView18) {
+      @NonNull AppCompatButton nextBtn, @NonNull TextView signinTxt, @NonNull TextView textView18) {
     this.rootView = rootView;
     this.editTextPassword = editTextPassword;
     this.editTextUsername = editTextUsername;
     this.loginPage = loginPage;
     this.loginTxt = loginTxt;
     this.nextBtn = nextBtn;
+    this.signinTxt = signinTxt;
     this.textView18 = textView18;
   }
 
@@ -105,6 +109,12 @@ public final class ActivityLoginPageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.signinTxt;
+      TextView signinTxt = ViewBindings.findChildViewById(rootView, id);
+      if (signinTxt == null) {
+        break missingId;
+      }
+
       id = R.id.textView18;
       TextView textView18 = ViewBindings.findChildViewById(rootView, id);
       if (textView18 == null) {
@@ -112,7 +122,7 @@ public final class ActivityLoginPageBinding implements ViewBinding {
       }
 
       return new ActivityLoginPageBinding((ConstraintLayout) rootView, editTextPassword,
-          editTextUsername, loginPage, loginTxt, nextBtn, textView18);
+          editTextUsername, loginPage, loginTxt, nextBtn, signinTxt, textView18);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
