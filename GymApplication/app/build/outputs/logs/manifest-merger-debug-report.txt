@@ -132,7 +132,7 @@ ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:27:13-40
-activity#com.example.gymapplication.CreateAcoount
+activity#com.example.gymapplication.CreateAccount
 ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:31:13-37

@@ -7,7 +7,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.gymapplication.CreateAcoount
 import com.example.gymapplication.R
 import com.example.gymapplication.LoginPage
 import com.example.gymapplication.Onboarding1

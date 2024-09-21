@@ -42,7 +42,7 @@
             android:name="com.example.gymapplication.Onboarding2"
             android:exported="false" />
         <activity
-            android:name="com.example.gymapplication.CreateAcoount"
+            android:name="com.example.gymapplication.CreateAccount"
             android:exported="false" />
         <activity
             android:name="com.example.gymapplication.ForgotPassword"

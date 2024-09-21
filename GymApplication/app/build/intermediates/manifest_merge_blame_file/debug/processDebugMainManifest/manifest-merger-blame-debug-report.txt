@@ -72,7 +72,7 @@
 43-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:28:13-37
 44        <activity
 44-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:29:9-31:40
-45            android:name="com.example.gymapplication.CreateAcoount"
+45            android:name="com.example.gymapplication.CreateAccount"
 45-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:30:13-42
 46            android:exported="false" />
 46-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:31:13-37

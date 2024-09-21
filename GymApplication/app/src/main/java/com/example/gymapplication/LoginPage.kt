@@ -31,7 +31,7 @@ class LoginPage : AppCompatActivity() {
         }
         val navigateTextView1: TextView = findViewById(R.id.signinTxt)
         navigateTextView1.setOnClickListener {
-            val intent = Intent(this, CreateAcoount::class.java)
+            val intent = Intent(this, CreateAccount::class.java)
             startActivity(intent)
         }
 
