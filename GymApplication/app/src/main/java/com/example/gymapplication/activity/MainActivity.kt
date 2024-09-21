@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     private fun getData(): ArrayList<Workout> {
         val list = ArrayList<Workout>()
 
-        list.add(Workout("Running", "You just woke up. It is a brand new day. The canvas is blank. How do you begin? Take 21 minutes to cultivate a peaceful mind and strong body.", "pic_1", 160, "9 min", getLesson1()))
+        list.add(Workout("Running", "You just woke up. It is a brand new day. The canvas is blank. How do you begin? Take 21 minutes to cultivate a peaceful mind and strong body.", "runningimg", 160, "9 min", getLesson1()))
         list.add(Workout("Stretching", "You just woke up. It is a brand new day. The canvas is blank. How do you begin? Take 21 minutes to cultivate a peaceful mind and strong body.", "pic_2", 230, "85 min", getLesson2()))
         list.add(Workout("Yoga", "You just woke up. It is a brand new day. The canvas is blank. How do you begin? Take 21 minutes to cultivate a peaceful mind and strong body.", "pic_3", 180, "65 min", getLesson3()))
 

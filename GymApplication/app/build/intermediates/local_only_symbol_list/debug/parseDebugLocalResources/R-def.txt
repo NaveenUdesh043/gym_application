@@ -69,6 +69,10 @@ drawable pic_3_3
 drawable pic_3_4
 drawable play
 drawable profile
+drawable runningimg
+drawable runningimg1
+drawable runningimg2
+drawable runningimg3
 drawable search
 drawable todo_txt
 drawable todolist

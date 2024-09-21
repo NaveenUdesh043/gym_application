@@ -26,21 +26,21 @@ class WorkoutAdapter(private val list: ArrayList<Workout>) : RecyclerView.Adapte
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val workout = list[position]
 
-        // Set workout title
+
         holder.binding.titleTxt.text = workout.title
 
-        // Load image using Glide
+
         val resId = context.resources.getIdentifier(workout.picPath, "drawable", context.packageName)
         Glide.with(context)
             .load(resId)
             .into(holder.binding.pic2)
 
-        // Set exercise count, calories, and duration
+
         holder.binding.exerciseTxt.text = "${workout.lessons.size} Exercise"
         holder.binding.kcalTxt.text = "${workout.kcal} Kcal"
         holder.binding.durationTxt.text = workout.durationAll
 
-        // Set click listener on the root view
+
         holder.binding.root.setOnClickListener {
             val intent = Intent(context, WorkoutActivity::class.java).apply {
                 putExtra("object", workout)

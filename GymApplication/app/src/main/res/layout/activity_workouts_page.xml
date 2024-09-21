@@ -31,7 +31,7 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/pic_2" />
+                    app:srcCompat="@drawable/runningimg" />
 
                 <ImageView
                     android:id="@+id/backBtn"
@@ -176,7 +176,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:srcCompat="@drawable/pic_3_1" />
+                        app:srcCompat="@drawable/runningimg1" />
 
                     <TextView
 
@@ -231,7 +231,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:srcCompat="@drawable/pic_3_2" />
+                        app:srcCompat="@drawable/runningimg2" />
 
                     <TextView
 
@@ -286,7 +286,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:srcCompat="@drawable/pic_3_2" />
+                        app:srcCompat="@drawable/runningimg3" />
 
                     <TextView
 
