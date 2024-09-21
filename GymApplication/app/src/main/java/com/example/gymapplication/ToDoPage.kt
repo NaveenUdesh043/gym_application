@@ -181,7 +181,7 @@ class ToDoPage : AppCompatActivity() {
             descriptionTextView.text = task.description
             dateTimeTextView.text = task.getFormattedDateTime()
             reminderTimeTextView.text = task.getFormattedReminderTime()
-            durationTextView.text = "Duration: ${task.duration}"
+            durationTextView.text = "Duration: ${task.duration} mins"
 
             return view
         }

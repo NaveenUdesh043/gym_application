@@ -34,9 +34,6 @@ public final class ActivityIntroBinding implements ViewBinding {
   public final AppCompatButton nextBtn;
 
   @NonNull
-  public final TextView signinTxt;
-
-  @NonNull
   public final TextView textView;
 
   @NonNull
@@ -44,14 +41,12 @@ public final class ActivityIntroBinding implements ViewBinding {
 
   private ActivityIntroBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView3,
       @NonNull ImageView imageView9, @NonNull ConstraintLayout launchingPage,
-      @NonNull AppCompatButton nextBtn, @NonNull TextView signinTxt, @NonNull TextView textView,
-      @NonNull TextView textView5) {
+      @NonNull AppCompatButton nextBtn, @NonNull TextView textView, @NonNull TextView textView5) {
     this.rootView = rootView;
     this.imageView3 = imageView3;
     this.imageView9 = imageView9;
     this.launchingPage = launchingPage;
     this.nextBtn = nextBtn;
-    this.signinTxt = signinTxt;
     this.textView = textView;
     this.textView5 = textView5;
   }
@@ -103,12 +98,6 @@ public final class ActivityIntroBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.signinTxt;
-      TextView signinTxt = ViewBindings.findChildViewById(rootView, id);
-      if (signinTxt == null) {
-        break missingId;
-      }
-
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
@@ -122,7 +111,7 @@ public final class ActivityIntroBinding implements ViewBinding {
       }
 
       return new ActivityIntroBinding((ConstraintLayout) rootView, imageView3, imageView9,
-          launchingPage, nextBtn, signinTxt, textView, textView5);
+          launchingPage, nextBtn, textView, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

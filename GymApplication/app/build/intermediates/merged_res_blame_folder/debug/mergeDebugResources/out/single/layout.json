@@ -8,10 +8,6 @@
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_login_page.xml"
     },
     {
-        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_profile_page.xml",
-        "source": "com.example.gymapplication.app-main-34:/layout/activity_profile_page.xml"
-    },
-    {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_onboarding1.xml",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_onboarding1.xml"
     },
@@ -50,6 +46,10 @@
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\activity_workouts_page.xml",
         "source": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-main-34:\\layout\\activity_workouts_page.xml"
+    },
+    {
+        "merged": "com.example.gymapplication.app-mergeDebugResources-31:/layout/activity_todo.xml",
+        "source": "com.example.gymapplication.app-main-34:/layout/activity_todo.xml"
     },
     {
         "merged": "C:\\Users\\NaveenSilva\\.gradle\\daemon\\8.7\\com.example.gymapplication.app-mergeDebugResources-31:\\layout\\viewholder_workout.xml",
