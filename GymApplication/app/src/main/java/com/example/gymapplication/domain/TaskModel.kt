@@ -6,7 +6,8 @@ import java.util.*
 data class Task(
     var description: String,
     var dateTime: Long,
-    var reminderTime: Long
+    var reminderTime: Long,
+    var duration: String
 ) {
     fun getFormattedDateTime(): String {
         val date = Date(dateTime)

@@ -54,7 +54,7 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
   public final TextView kcalTxt;
 
   @NonNull
-  public final ImageView onb2;
+  public final ImageView pic2;
 
   @NonNull
   public final ScrollView scrollView3;
@@ -103,7 +103,7 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
       @NonNull TextView descriptionTxt, @NonNull TextView durationTxt,
       @NonNull TextView exerciseTxt, @NonNull ImageView imageView7, @NonNull ImageView imageView8,
       @NonNull ImageView imageView81, @NonNull ImageView imageView82, @NonNull TextView kcalTxt,
-      @NonNull ImageView onb2, @NonNull ScrollView scrollView3,
+      @NonNull ImageView pic2, @NonNull ScrollView scrollView3,
       @NonNull ShapeableImageView shapeableImageView,
       @NonNull ShapeableImageView shapeableImageView1,
       @NonNull ShapeableImageView shapeableImageView2, @NonNull TextView textView14,
@@ -121,7 +121,7 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
     this.imageView81 = imageView81;
     this.imageView82 = imageView82;
     this.kcalTxt = kcalTxt;
-    this.onb2 = onb2;
+    this.pic2 = pic2;
     this.scrollView3 = scrollView3;
     this.shapeableImageView = shapeableImageView;
     this.shapeableImageView1 = shapeableImageView1;
@@ -225,9 +225,9 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.onb2;
-      ImageView onb2 = ViewBindings.findChildViewById(rootView, id);
-      if (onb2 == null) {
+      id = R.id.pic2;
+      ImageView pic2 = ViewBindings.findChildViewById(rootView, id);
+      if (pic2 == null) {
         break missingId;
       }
 
@@ -313,7 +313,7 @@ public final class ActivityWorkoutsPageBinding implements ViewBinding {
 
       return new ActivityWorkoutsPageBinding((ConstraintLayout) rootView, backBtn, buttonStart,
           descriptionTxt, durationTxt, exerciseTxt, imageView7, imageView8, imageView81,
-          imageView82, kcalTxt, onb2, scrollView3, shapeableImageView, shapeableImageView1,
+          imageView82, kcalTxt, pic2, scrollView3, shapeableImageView, shapeableImageView1,
           shapeableImageView2, textView14, textView15, textView17, textView20, textView6,
           textView61, textView62, titleTxt, view, workoutsPage);
     }

@@ -73,11 +73,12 @@ class ToDoPage : AppCompatActivity() {
             if (selectedWorkoutIndex != null) {
                 val workout = workoutList[selectedWorkoutIndex!!]
                 workout.description = workoutName
+                workout.duration = workoutDuration
                 workout.dateTime = workoutDateTime
                 workout.reminderTime = reminderTime
                 selectedWorkoutIndex = null
             } else {
-                val workout = Task(workoutName, workoutDateTime, reminderTime)
+                val workout = Task(workoutName, workoutDateTime, reminderTime, workoutDuration)
                 workoutList.add(workout)
             }
             saveWorkouts()
@@ -86,6 +87,7 @@ class ToDoPage : AppCompatActivity() {
             workoutDurationInput.text.clear()
         }
     }
+
 
     private fun deleteWorkout() {
         selectedWorkoutIndex?.let { index ->
@@ -102,7 +104,7 @@ class ToDoPage : AppCompatActivity() {
         val editor = sharedPreferences.edit()
         editor.clear()
         for ((index, workout) in workoutList.withIndex()) {
-            editor.putString("workout_$index", "${workout.description}|${workout.dateTime}|${workout.reminderTime}")
+            editor.putString("workout_$index", "${workout.description}|${workout.dateTime}|${workout.reminderTime}|${workout.duration}")
         }
         editor.putInt("workout_count", workoutList.size)
         editor.apply()
@@ -113,11 +115,12 @@ class ToDoPage : AppCompatActivity() {
         workoutList.clear()
         for (i in 0 until count) {
             val workoutString = sharedPreferences.getString("workout_$i", null) ?: continue
-            val (description, dateTime, reminderTime) = workoutString.split("|")
-            workoutList.add(Task(description, dateTime.toLong(), reminderTime.toLong()))
+            val (description, dateTime, reminderTime, duration) = workoutString.split("|")
+            workoutList.add(Task(description, dateTime.toLong(), reminderTime.toLong(), duration)) // Add duration
         }
         updateWorkoutAdapter()
     }
+
 
     private fun updateWorkoutAdapter() {
         workoutAdapter.notifyDataSetChanged()
@@ -173,12 +176,15 @@ class ToDoPage : AppCompatActivity() {
             val descriptionTextView: TextView = view.findViewById(R.id.task_description)
             val dateTimeTextView: TextView = view.findViewById(R.id.task_datetime)
             val reminderTimeTextView: TextView = view.findViewById(R.id.task_reminder_time)
+            val durationTextView: TextView = view.findViewById(R.id.task_duration)
 
             descriptionTextView.text = task.description
             dateTimeTextView.text = task.getFormattedDateTime()
             reminderTimeTextView.text = task.getFormattedReminderTime()
+            durationTextView.text = "Duration: ${task.duration}"
 
             return view
         }
     }
+
 }

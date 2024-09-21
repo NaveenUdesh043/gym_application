@@ -26,14 +26,18 @@ public final class ActivityTaskListTimeBinding implements ViewBinding {
   public final TextView taskDescription;
 
   @NonNull
+  public final TextView taskDuration;
+
+  @NonNull
   public final TextView taskReminderTime;
 
   private ActivityTaskListTimeBinding(@NonNull RelativeLayout rootView,
       @NonNull TextView taskDatetime, @NonNull TextView taskDescription,
-      @NonNull TextView taskReminderTime) {
+      @NonNull TextView taskDuration, @NonNull TextView taskReminderTime) {
     this.rootView = rootView;
     this.taskDatetime = taskDatetime;
     this.taskDescription = taskDescription;
+    this.taskDuration = taskDuration;
     this.taskReminderTime = taskReminderTime;
   }
 
@@ -76,6 +80,12 @@ public final class ActivityTaskListTimeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.task_duration;
+      TextView taskDuration = ViewBindings.findChildViewById(rootView, id);
+      if (taskDuration == null) {
+        break missingId;
+      }
+
       id = R.id.task_reminder_time;
       TextView taskReminderTime = ViewBindings.findChildViewById(rootView, id);
       if (taskReminderTime == null) {
@@ -83,7 +93,7 @@ public final class ActivityTaskListTimeBinding implements ViewBinding {
       }
 
       return new ActivityTaskListTimeBinding((RelativeLayout) rootView, taskDatetime,
-          taskDescription, taskReminderTime);
+          taskDescription, taskDuration, taskReminderTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

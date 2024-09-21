@@ -110,7 +110,6 @@ id loginPage
 id loginTxt
 id nextBtn
 id nextBtn1
-id onb2
 id onboarding2
 id onboarding3
 id pauseButton
@@ -130,6 +129,7 @@ id stopwatch
 id stopwatchDisplay
 id task_datetime
 id task_description
+id task_duration
 id task_reminder_time
 id textView
 id textView10
