@@ -3051,6 +3051,7 @@ int drawable logo 0x7f0700ad
 int drawable logo1 0x7f0700ae
 int drawable logo2 0x7f0700af
 int drawable logoo 0x7f0700b0
+int drawable logooimg 0x7f070129
 int drawable m3_avd_hide_password 0x7f0700b1
 int drawable m3_avd_show_password 0x7f0700b2
 int drawable m3_bottom_sheet_drag_handle 0x7f0700b3
@@ -3984,6 +3985,7 @@ int mipmap appicon 0x7f0d0002
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int mipmap logoo 0x7f0d0003
+int mipmap logooimg 0x7f0d0004
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string _15min_beginner 0x7f0f0000
 int string _160_kcal 0x7f0f0001

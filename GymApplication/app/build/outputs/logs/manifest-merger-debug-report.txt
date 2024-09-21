@@ -101,7 +101,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Na
 	tools:targetApi
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:11:9-39
 	android:allowBackup
 		ADDED from C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme

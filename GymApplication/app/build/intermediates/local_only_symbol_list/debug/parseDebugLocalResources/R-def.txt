@@ -35,6 +35,7 @@ drawable logo
 drawable logo1
 drawable logo2
 drawable logoo
+drawable logooimg
 drawable monitor1
 drawable monitor2
 drawable monitor3
@@ -199,6 +200,7 @@ mipmap appicon
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logoo
+mipmap logooimg
 string _15min_beginner
 string _160_kcal
 string _20_min

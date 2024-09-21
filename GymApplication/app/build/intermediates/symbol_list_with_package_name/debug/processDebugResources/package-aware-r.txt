@@ -3052,6 +3052,7 @@ drawable logo
 drawable logo1
 drawable logo2
 drawable logoo
+drawable logooimg
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3985,6 +3986,7 @@ mipmap appicon
 mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap logoo
+mipmap logooimg
 plurals mtrl_badge_content_description
 string _15min_beginner
 string _160_kcal
