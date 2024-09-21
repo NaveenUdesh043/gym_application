@@ -2994,6 +2994,7 @@ int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
 int drawable achi 0x7f070078
+int drawable appicon 0x7f070128
 int drawable avd_hide_password 0x7f070079
 int drawable avd_show_password 0x7f07007a
 int drawable back 0x7f07007b
@@ -3979,8 +3980,10 @@ int layout select_dialog_singlechoice_material 0x7f0b0077
 int layout support_simple_spinner_dropdown_item 0x7f0b0078
 int layout viewholder_exercise 0x7f0b0079
 int layout viewholder_workout 0x7f0b007a
+int mipmap appicon 0x7f0d0002
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
+int mipmap logoo 0x7f0d0003
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string _15min_beginner 0x7f0f0000
 int string _160_kcal 0x7f0f0001

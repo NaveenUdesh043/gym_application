@@ -12,6 +12,7 @@ dimen margin_standard
 dimen text_large
 dimen text_medium
 drawable achi
+drawable appicon
 drawable back
 drawable background
 drawable banner
@@ -194,8 +195,10 @@ layout activity_workout
 layout activity_workouts_page
 layout viewholder_exercise
 layout viewholder_workout
+mipmap appicon
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap logoo
 string _15min_beginner
 string _160_kcal
 string _20_min

@@ -2995,6 +2995,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable achi
+drawable appicon
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -3980,8 +3981,10 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout viewholder_exercise
 layout viewholder_workout
+mipmap appicon
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap logoo
 plurals mtrl_badge_content_description
 string _15min_beginner
 string _160_kcal

@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Gym Application</string>
+    <string name="app_name">Fit Life\nBuddy</string>
     <string name="loginTxt">Do you have an account? <font color="#FD511E">SignUp</font></string>
     <string name="forgot_password">Forgot Password</string>
     <string name="get_started">Get Started</string>
     <string name="push_yourself_nto_the_limit">PUSH YOURSELF\nTO THE LIMIT</string>
     <string name="liluksha_rs">Liluksha RS</string>
-    <string name="welcome_to_nfitlifebudddy">Welcome to \nFit Life Budddy</string>
+    <string name="welcome_to_nfitlifebudddy">Welcome to \nFit Life Buddy</string>
     <string name="let_s_go">Let\'s Go</string>
     <string name="onboardingScreen1Title">Workouts Tailored\n Just for You</string>
     <string name="onboardingScreen1Description">Whether your goal is to maintain a healthy lifestyle, gain muscle, or reduce weight, get personalised fitness plans that meet your objectives.</string>

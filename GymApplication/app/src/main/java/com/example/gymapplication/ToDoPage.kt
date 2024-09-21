@@ -52,6 +52,7 @@ class ToDoPage : AppCompatActivity() {
         workoutListView.setOnItemClickListener { _, _, position, _ ->
             selectedWorkoutIndex = position
             workoutNameInput.setText(workoutList[position].description)
+            workoutDurationInput.setText(workoutList[position].duration.toString())
         }
 
         loadWorkouts()
@@ -88,7 +89,6 @@ class ToDoPage : AppCompatActivity() {
         }
     }
 
-
     private fun deleteWorkout() {
         selectedWorkoutIndex?.let { index ->
             workoutList.removeAt(index)
@@ -120,7 +120,6 @@ class ToDoPage : AppCompatActivity() {
         }
         updateWorkoutAdapter()
     }
-
 
     private fun updateWorkoutAdapter() {
         workoutAdapter.notifyDataSetChanged()
@@ -186,5 +185,4 @@ class ToDoPage : AppCompatActivity() {
             return view
         }
     }
-
 }

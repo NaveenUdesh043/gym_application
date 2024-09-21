@@ -39,8 +39,8 @@
 26-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:11:9-43
 27        android:label="@string/app_name"
 27-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:12:9-41
-28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:13:9-54
+28        android:roundIcon="@mipmap/logoo"
+28-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:13:9-42
 29        android:supportsRtl="true"
 29-->C:\kotlin\GymApplication\gym_application\GymApplication\app\src\main\AndroidManifest.xml:14:9-35
 30        android:testOnly="true"
